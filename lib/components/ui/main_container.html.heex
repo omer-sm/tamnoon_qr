@@ -5,7 +5,7 @@
       <label for="content-input" class="form-label h5">QR code content:</label>
       <input class="form-control" id="content-input" oninput=@update-qr_content value=@qr_content type="text" placeholder="Enter your text or URL here.." />
     </div>
-    <button class="btn btn-primary w-50">Generate QR Code</button>
+    <button class="btn btn-primary w-50" onclick=@handle_qr_submit>Generate QR Code</button>
   </div>
 
   <%= r.("qr_display.html.heex") %>

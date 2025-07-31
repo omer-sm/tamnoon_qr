@@ -14,7 +14,8 @@ defmodule TamnoonQr.Application do
            router: TamnoonQr.Router,
            initial_state: %{
             qr_content: ""
-           }
+           },
+           methods_modules: [TamnoonQR.Methods.QrMethods],
          ]
        ]}
     ]

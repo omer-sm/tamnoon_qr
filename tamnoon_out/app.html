@@ -29,11 +29,11 @@
       <label for="content-input" class="form-label h5">QR code content:</label>
       <input class="form-control tmnn-qr_content-value tmnnevent-oninput-update-qr_content" id="content-input"   type="text" placeholder="Enter your text or URL here.." />
     </div>
-    <button class="btn btn-primary w-50">Generate QR Code</button>
+    <button class="btn btn-primary w-50 tmnnevent-onclick-handle_qr_submit" >Generate QR Code</button>
   </div>
 
-  <div class="card border-success">
-  <img src="https://api.qrserver.com/v1/create-qr-code/?data=REPLACE+ME&amp;size=300x300" class="card-img-top" alt="QR Code">
+  <div class="card border-success" id="qr-display-container" hidden>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=REPLACE+ME&amp;size=300x300" class="card-img-top" alt="QR Code" id="qr-img">
   <div class="card-body">
     <h5 class="card-title text-success">Your QR code is ready!</h5>
   </div>
