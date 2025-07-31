@@ -1,0 +1,12 @@
+<main class="container-fluid" id="main-container">
+  <h1>Tamnoon QR Code Generator</h1>
+  <div class="w-50" id="content-input-container">
+    <div class="mb-4 mt-1 w-100">
+      <label for="content-input" class="form-label h5">Enter your QR code's content:</label>
+      <input class="form-control" id="content-input">
+    </div>
+    <button class="btn btn-primary w-50">Generate QR Code</button>
+  </div>
+
+  <%= r.("qr_display.html.heex") %>
+</main>

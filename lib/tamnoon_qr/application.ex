@@ -8,8 +8,12 @@ defmodule TamnoonQr.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: TamnoonQr.Worker.start_link(arg)
-      # {TamnoonQr.Worker, arg}
+      {Tamnoon,
+       [
+         [
+           router: TamnoonQr.Router
+         ]
+       ]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

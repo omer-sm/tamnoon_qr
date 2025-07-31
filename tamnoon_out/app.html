@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+    <title>Tamnoon QR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="tamnoon/tamnoon_dom.js"></script>
+    <script src="tamnoon/tamnoon_driver.js"></script>
+    <link rel="icon" type="image/x-icon" href="/tamnoon/tamnoon_icon.ico">
+    <link rel="stylesheet" href="/style/uiStyle.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+  </head>
+
+  <body data-bs-theme="dark">
+      <div id="app-container">
+        <nav class="navbar bg-body-secondary" id="topbar">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Tamnoon QR</span>
+  </div>
+</nav>
+        <main class="container-fluid" id="main-container">
+  <h1>Tamnoon QR Code Generator</h1>
+  <div class="w-50" id="content-input-container">
+    <div class="mb-4 mt-1 w-100">
+      <label for="content-input" class="form-label h5">Enter your QR code's content:</label>
+      <input class="form-control" id="content-input">
+    </div>
+    <button class="btn btn-primary w-50">Generate QR Code</button>
+  </div>
+
+  <div class="card border-success">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=REPLACE+ME&amp;size=300x300" class="card-img-top" alt="QR Code">
+  <div class="card-body">
+    <h5 class="card-title text-success">Your QR code is ready!</h5>
+  </div>
+</div>
+</main>
+      </div>
+
+      <!-- Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
