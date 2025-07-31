@@ -2,8 +2,8 @@
   <h1>Tamnoon QR Code Generator</h1>
   <div class="w-50" id="content-input-container">
     <div class="mb-4 mt-1 w-100">
-      <label for="content-input" class="form-label h5">Enter your QR code's content:</label>
-      <input class="form-control" id="content-input">
+      <label for="content-input" class="form-label h5">QR code content:</label>
+      <input class="form-control" id="content-input" oninput=@update-qr_content value=@qr_content type="text" placeholder="Enter your text or URL here.." />
     </div>
     <button class="btn btn-primary w-50">Generate QR Code</button>
   </div>

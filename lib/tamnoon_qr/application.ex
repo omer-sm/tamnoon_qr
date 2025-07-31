@@ -11,7 +11,10 @@ defmodule TamnoonQr.Application do
       {Tamnoon,
        [
          [
-           router: TamnoonQr.Router
+           router: TamnoonQr.Router,
+           initial_state: %{
+            qr_content: ""
+           }
          ]
        ]}
     ]
